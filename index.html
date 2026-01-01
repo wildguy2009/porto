@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Management Graduate</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo">Portfolio</a>
+
+    <nav>
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+</nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-img">
+        <img src="profile.jpg" alt="Profile Photo">
+    </div>
+
+    <div class="home-content">
+        <h1>Hi, I'm <span>Wildan</span></h1>
+        <h3>Management Graduate</h3>
+
+        <p>
+            Management graduate with a strong foundation in business administration, data processing,
+            and organizational management. Detail-oriented, adaptable, and motivated to contribute
+            in a full-time role within a professional business environment.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/wildanul-hakim-ahmad-1a0aa331a" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+</a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:wildanulhakimahmad797@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.instagram.com/super_wildan.292/" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+    <a href="https://wa.me/+6287703932497" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</a>
+        </div>
+</a>
+
+        <div class="buttons">
+            <a href="cv-wildan.pdf" download class="btn">Download CV</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Management graduate with a strong interest in business operations, administrative
+        support, and data processing. I possess good analytical skills, attention to detail, and
+        the ability to work both independently and in a team. I am currently seeking a full-time
+        opportunity to grow professionally and contribute to organizational success.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+        <span>Business Administration</span>
+        <span>Data Processing & Reporting</span>
+        <span>Microsoft Excel</span>
+        <span>Microsoft Word</span>
+        <span>PowerPoint</span>
+        <span>Google Workspace</span>
+        <span>Basic Data Analysis</span>
+        <span>Communication Skills</span>
+        <span>Time Management</span>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education" id="education">
+    <h2>Education</h2>
+    <div class="edu-box">
+        <h3>Bachelor’s Degree in Management</h3>
+        <p>University Cipasung Tasikmalaya</p>
+        <p>Year of Graduation: 2025</p>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+    <h2>Experience</h2>
+    <div class="exp-box">
+        <h3>Academic & Project Experience</h3>
+        <ul>
+            <li>Assisted in data processing and report preparation for academic projects</li>
+            <li>Conducted basic business analysis and case studies</li>
+            <li>Prepared presentations and written reports using Microsoft Office</li>
+            <li>Collaborated with team members to complete management-related assignments</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        Email:
+        <a href="mailto:wildanulhakimahmad797@gmail.com">
+            wildanulhakimahmad797@gmail.com
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/wildanul-hakim-ahmad-1a0aa331a" target="_blank">
+            linkedin.com/in/wildanul-hakim-ahmad-1a0aa331a
+        </a>
+    </p>
+
+    <p>
+        WhatsApp:
+        <a href="https://wa.me/+6287703932497" target="_blank">
+            +6287703932497
+        </a>
+    </p>
+</section>
+
+</section>
+
+<footer>
+    <p>© 2025 Wildanul Hakim Ahmad | Management Graduate</p>
+</footer>
+
+<!-- 👇 TEMPEL SCRIPT DI SINI -->
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150;
+        if (window.scrollY >= sectionTop) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
+</footer>
+
+<!-- 👇 TEMPEL SCRIPT DI SINI -->
+<script>
+const allSections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    allSections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        const trigger = window.innerHeight / 1.2;
+
+        if (top < trigger) {
+            section.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
