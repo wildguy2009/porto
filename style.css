@@ -659,4 +659,26 @@ footer p{
         font-size: 2rem;
     }
 }
+/* ===== Mobile & Tablet Header Fix ===== */
+@media (max-width: 768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4%;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+    }
+
+    #menu-icon{
+        margin-left: auto;
+        padding-left: 1.5rem;
+    }
+
+    .buttons{
+        margin-top: 2rem;
+    }
+}
 
