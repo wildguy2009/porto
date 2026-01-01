@@ -131,9 +131,9 @@ span{
 
 /* FORCE JUSTIFY HOME TEXT (DESKTOP & MOBILE) */
 .home-content p{
-    text-align: justify !important;
-    text-justify: inter-word;
-    line-height: 1.8;
+    font-size: 1.9rem;
+    line-height: 1.9;
+    text-align: justify;
 }
 
 
