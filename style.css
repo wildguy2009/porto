@@ -129,9 +129,13 @@ span{
     font-weight: 700;
 }
 
+/* FORCE JUSTIFY HOME TEXT (DESKTOP & MOBILE) */
 .home-content p{
-    font-size: 1.6rem;
+    text-align: justify !important;
+    text-justify: inter-word;
+    line-height: 1.8;
 }
+
 
 .home-img{
     border-radius: 50%;
